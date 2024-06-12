@@ -9,7 +9,7 @@ image = cv.imread("Images\Img8.jpg")
 gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
     
 # Create haar-cascade object
-haar_cascade = cv.CascadeClassifier("haar_cascade_face.xml")
+haar_cascade = cv.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 # Detect faces using haar-cascade
 faces = haar_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5)
